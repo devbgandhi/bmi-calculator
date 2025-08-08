@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h2>BMI calculator</h2>
+
+        <div class="wrapper">
+        <!-- for weight -->
+        <div id="weight" class="fields">
+        <label for="weight-input">Enter weight:</label>
+        <input type="text" placeholder="enter weight" id="weight-input" required>
+        <select name="weight-type" id="weight-type">
+            <option value="null-weight">select</option>
+            <option value="pounds">lbs</option>
+            <option value="kgs">kgs</option>
+        </select>
+        </div>
+        
+        <!-- for height -->
+        <div id="height" class="fields">
+        <label for="height-input">Enter height:</label>
+        <input type="text" placeholder="enter height" id="height-input" class="" required>
+
+
+        <!-- hidden class if the user selects feets because we would need inches -->
+        <div id="feet-inches" class="hidden">
+        <input type="text" placeholder="ft" id="feet-input">
+        <input type="text" placeholder="in" id="inches-input">
+        </div>
+        <!-- Hidden Class only needed if user selects feet -->
+        
+        <select name="height-type" id="height-type" required>
+            <option value="null-height">select</option>
+            <option value="cm">cms</option>
+            <option value="feet">feet</option>
+        </select>
+
+
+
+        </div>
+        
+        <div id="buttons">
+            <button id="calculate-button">Calculate</button>
+            <button id="reset">Reset</button>
+        </div>
+        </div>
+
+        <div id="range">
+            <p>BMI Range</p>
+            <ul>
+                <li>Underweight (&lt;18.5)</li>
+                <li>Normal (18.5&ndash;24.9)</li>
+                <li>Overweight (25&ndash;29.9)</li>
+            </ul>
+        </div>
+        <div class="result hidden">
+            <p id="calculate-result">Your BMI is : <span id="var_result">0<span></p>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

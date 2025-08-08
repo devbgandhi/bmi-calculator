@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #134074;
+    color: #EEF4ED;
+}
+h2 {
+    height: 10%;
+    font-size: 2rem;
+    text-align: center;
+    justify-items: center;
+    margin: 2%;
+    padding: 2%;
+    justify-content: center;
+}
+
+/* container for whole  */
+.container {
+    height: 80vmin;
+    width: 80vmin;
+    background-color: #0B2545;
+    border-radius: 5%;
+    box-shadow:4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* wrapper for both fields */
+.wrapper {    
+    border: 2px solid black;
+    height: 40%;
+    text-align: center;
+    padding: 5%;
+    margin: 5% 5% 0% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fields {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+input {
+    border: none;
+    background-color: #EEF4ED;
+    border-radius: 10px;
+}
+input, label, select {
+    height: 50%;
+    width: 33%;
+    text-align: center;
+    font-size: medium;
+    margin: 10px;
+}
+/* for feet inches if user selects that just make the div same height as above */
+#feet-inches{
+    display: flex;
+    height: 33%;
+    width: 50%;
+}
+#feet-inches input{
+    width: 45%;
+    height: 50%;
+}
+select {
+    width: fit-content;
+}
+#buttons{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#calculate-button, #reset{
+    height: 100%;
+    width: 25%;
+    border-radius: 5px;
+    background-color: #134074;
+    border: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    color: #EEF4ED;
+}
+
+
+
+#feet-inches input {
+    width: 45%; 
+    margin: 5px; 
+    padding: 10px; 
+    font-size: 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #EEF4ED; 
+    color: #134074; 
+}
+
+#range{
+height: fit-content;
+width: 100%;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+#range p {
+    text-align: center;
+    width: 100%;
+    height: 25%;
+}
+#range li{
+width: 100%;
+height: 25%;
+list-style: none;
+}
+
+.result {
+    text-align: center;
+    height: 8%;
+    margin: 1%;
+}
+
+.hidden {
+    display: none;
+}
+
+#feet-inches.hidden {
+    display: none !important; /* Hide the element */
+}
